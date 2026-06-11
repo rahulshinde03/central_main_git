@@ -136,3 +136,132 @@ grep root |etc|passwd
 grep root | etc/passwd
 grep root | /etc/passwd
 sudo su -
+useradd raj
+cat /etc/passwd
+useradd rahul
+cat /etc/passwd
+groupadd devops
+cat /etc/group
+useradd sai
+cat /etc/passwd
+gpasswd -a sai devops
+cat /etc/group
+gpasswd -m hari devops
+gpasswd -M hari,mari devops
+gpasswd -M hari  devops
+gpasswd -M hari mari devops
+gpasswd -M hari, mari devops
+gpasswd -d raj devops
+gpasswd -d sai devops
+cat /etc/group
+userdel sai
+cat /etc/passwd
+cat /etc/group
+groupdel rahul
+groupdel -r rahul
+userdel -r rahul
+cat /etc/passwd
+cat /etc/group
+groupdel devops
+cat /etc/group
+ln -s /var/www/html/index.html softindex
+ls
+ls -l
+ln /var/www/html/index.html hardindex
+ln softindex hardindex
+ls
+cat hardindex
+cd hardindex
+ls -l
+tar -cvf dir5.tar dir5
+ls
+tar -cvf file1.tar file1
+ls
+gzip file5.tar
+gzip dir10626.tar
+gunzip file1.tar
+tar -xvf file1.tar 
+ls
+tar -cvzf dir5.tar.gz dir5
+ls
+tar -xvzf dir5.tar.gz
+ls
+ls -l
+chmod 755 dir5
+ls -l
+chmod 744 dir5
+ls -l
+cat /etc/passwd
+chown raj dir5
+ls -l
+cat /etc/group
+groupadd devops
+cat /etc/group
+chgrp devops dir5
+ls -l
+cat /etc/group
+ls -l
+clear
+yum install git -y
+which git
+git config --global user.name "rahulshinde03"
+git config --global user.email "rahulshinde7226@gmail.com"
+mkdir project
+ls
+mv project projectgit
+ls
+cd projectgit/
+ls
+cd ..
+vi myfile 
+ls -a
+ls -la
+git status
+git init .
+git myfile
+.git myfile
+git add myfile
+git status
+git .add
+git .
+ls -a
+git status
+git log
+git commit -m "first comment"
+git status
+git add.
+git add .
+git status
+git commit -m "new comment"
+git log
+git show 911b567
+git remote add origin https://github.com/rahulshinde03/central_main_git.git
+git remote -v
+git branch
+git branch -M main
+git branch
+ls
+cat myfile
+git log
+git push -u origin main
+vi myfile
+git status
+git add .
+git status
+git commit -m  "second commit"
+git log
+git 750fe85
+git log 750fe85
+git show 750fe85
+git push -u origin main
+sudo su -
+vi myfile
+git init
+git status
+git log
+git show 750fe857
+git show 750fe85
+git add .
+git status
+git show 750fe85
+git push -u origin main
